@@ -23,6 +23,10 @@ body {
     --fs-h1: 2.5em;
     --fs-h2: 2em;
     --fs-body: 1em;
+
+    --clr-light: #FEFEFE;
+    --clr-dark: #000000;
+    --clr-accent: #EFEEEB;
 }
 
 
@@ -45,13 +49,37 @@ p {
     font-size: var(--fs-body);
 }
 
+.banner {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+.banner span {
+    text-decoration: underline;
+}
+
+.section__intro {
+    background-color: var(--clr-accent);
+}
+
+.section__info {
+    background-color: var(--clr-light);
+}
+
 .hero__img {
     content: url('./Assets/Hero\ Image\ \(Mobile\).png');
+}
+
+.phone__mockup {
+    content: url('./Assets/Phone\ Mockup\ \(Mobile\).png');
 }
 
 @media (min-width: 768px) {
     .hero__img {
         content: url('./Assets/Hero\ Image\ \(Tablet\).png');
+    }
+
+    .phone__mockup {
+        content: url('./Assets/Phone\ Mockup\ \(Tablet\).png');
     }
 }
 
@@ -59,11 +87,15 @@ p {
     .hero__img {
         content: url('./Assets/Hero\ Image\ \(Desktop\).png');
     }
+
+    .phone__mockup {
+        content: url('./Assets/Phone\ Mockup\ \(Desktop\).png');
+    }
 }
 
 
 /* Typography */
-.section__intro__subtitle span {
+.section__intro__body span {
     font-style: italic;
 }
 
