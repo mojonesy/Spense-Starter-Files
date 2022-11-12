@@ -176,6 +176,7 @@ button {
     .nav-toggle { 
         display: block;
         background-color: transparent;
+        cursor: pointer;
     }
 
     .hamburger {
