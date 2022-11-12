@@ -30,7 +30,9 @@ body {
 }
 
 
-/* General Styles */
+/* General Styles, Typography */
+header { background-color: var(--clr-accent) }
+
 h1 {
     font-family: var(--ff-primary);
     font-weight: var(--fw-h1);
@@ -49,9 +51,18 @@ p {
     font-size: var(--fs-body);
 }
 
+button {
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+    border: none;
+    border-radius: 3px;
+    padding: 15px;
+}
+
 .banner {
     background-color: var(--clr-dark);
     color: var(--clr-light);
+    margin: 0;
 }
 .banner span {
     text-decoration: underline;
@@ -63,6 +74,10 @@ p {
 
 .section__info {
     background-color: var(--clr-light);
+}
+
+.section__intro__body span {
+    font-style: italic;
 }
 
 .subsection__info__escrow {
@@ -103,13 +118,83 @@ p {
 }
 
 
-/* Typography */
-.section__intro__body span {
-    font-style: italic;
+/* Nav */
+.logo_with_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-accent);
+}
+
+.nav_lists { 
+    display: flex;
+}
+
+.nav_list_main,
+.nav_list_login {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+    margin-left: 7em;
+}
+
+.nav_link {
+    text-decoration: none;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    color: var(--clr-dark);
+    padding: 0 .5em;
+}
+
+.nav_link_button { 
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav_list_main,
+    .nav_list_login {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .nav {
+        display: none;
+    }
 }
 
 /* Intro */
+.section__intro__title {
+    margin: 0 auto;
+}
 
+/* Info */
+.socials__list {
+    list-style: none;
+    display: flex;
+    overflow-x: scroll;
+    padding-left: 0;
+    margin: 0 1em;
+    height: 5em;
+}
+
+.socials__item {
+    padding-top: 3em; 
+    padding-right: 2em;
+}
+
+.socials__item img { 
+    width: 150px;
+}
 
 /* Footer */
 .footer {
