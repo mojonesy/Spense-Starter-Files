@@ -133,6 +133,8 @@ button {
     background-color: var(--clr-accent);
 }
 
+.nav-toggle { display: none }
+
 .nav_lists { 
     display: flex;
 }
@@ -167,9 +169,40 @@ button {
 }
 
 @media (max-width: 550px) {
-    .nav {
-        display: none;
+    .nav { display: none }
+
+    .logo_with_nav { padding: 0 .5em }
+
+    .nav-toggle { 
+        display: block;
+        background-color: transparent;
     }
+
+    .hamburger {
+        display: block;
+        position: relative;
+        color: var(--clr-dark);
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        background: var(--clr-dark);
+        width: 1em;
+        height: 2.5px;
+        transform: 300ms ease-in-out;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .hamburger::before { top: 4.5px }
+    .hamburger::after { bottom: 4.5px }
 }
 
 /* Intro */
