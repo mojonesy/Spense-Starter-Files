@@ -65,6 +65,15 @@ p {
     background-color: var(--clr-light);
 }
 
+.subsection__info__escrow {
+    background-color: var(--clr-accent);
+}
+
+.subsection__info__link {
+    color: var(--clr-dark);
+    font-family: var(--ff-primary);
+}
+
 .hero__img {
     content: url('./Assets/Hero\ Image\ \(Mobile\).png');
 }
@@ -100,3 +109,29 @@ p {
 }
 
 /* Intro */
+
+
+/* Footer */
+.footer {
+    background-color: var(--clr-dark);
+    color: #aeaeae;
+}
+
+.footer__body span {
+    font-style: italic;
+}
+
+.nav__footer__list { padding-left: 0 }
+
+.nav__footer__headlink,
+.nav__footer__link {
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--ff-primary);
+    color: #aeaeae;
+}
+
+.nav__footer__headlink,
+.footer__subtitle 
+{ color: var(--clr-light);
+}
