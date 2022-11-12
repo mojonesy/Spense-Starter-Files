@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --ff-primary: 'Cabin', sans-serif;
+
+    --fw-h1: 700;
+    --fw-h2: 600;
+    --fw-body: 400;
+
+    --fs-h1: 2.5em;
+    --fs-h2: 2em;
+    --fs-body: 1em;
+}
+
+
+/* General Styles */
+h1 {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-h1);
+    font-size: var(--fs-h1);
+}
+
+h2 { 
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-h2);
+    font-size: var(--fs-h2);
+}
+
+p { 
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
+}
+
+.hero__img {
+    content: url('./Assets/Hero\ Image\ \(Mobile\).png');
+}
+
+@media (min-width: 768px) {
+    .hero__img {
+        content: url('./Assets/Hero\ Image\ \(Tablet\).png');
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero__img {
+        content: url('./Assets/Hero\ Image\ \(Desktop\).png');
+    }
+}
+
+
+/* Typography */
+.section__intro__subtitle span {
+    font-style: italic;
+}
+
+/* Intro */
