@@ -16,17 +16,18 @@ body {
 :root {
     --ff-primary: 'Cabin', sans-serif;
 
-    --fw-h1: 700;
-    --fw-h2: 600;
+    --fw-h1: 600;
+    --fw-h2: 500;
     --fw-body: 400;
 
-    --fs-h1: 2.5em;
+    --fs-h1: 2.2em;
     --fs-h2: 2em;
     --fs-body: 1em;
 
     --clr-light: #FEFEFE;
     --clr-dark: #000000;
     --clr-accent: #EFEEEB;
+    --clr-body-gray: #606060;
 }
 
 
@@ -55,17 +56,30 @@ button {
     color: var(--clr-light);
     background-color: var(--clr-dark);
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 15px;
 }
 
 .banner {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    margin: 0;
+    margin-bottom: 1em;
+    margin-top: 0;
+    padding: 1em;
+    text-align: center;
 }
+
 .banner span {
     text-decoration: underline;
+    display: inline-block;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1em;
+    padding-bottom: 3em;
 }
 
 .section__intro {
@@ -74,6 +88,11 @@ button {
 
 .section__info {
     background-color: var(--clr-light);
+}
+
+.section__intro__body { 
+    color: var(--clr-body-gray);
+    letter-spacing: .4px;
 }
 
 .section__intro__body span {
@@ -251,7 +270,37 @@ button {
 /* Intro */
 .section__intro__title {
     margin: 0 auto;
+    padding-top: 1em;
 }
+
+.section__intro__body {
+    margin-bottom: 0;
+}
+
+.intro__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.intro__list__item {
+    font-family: var(--ff-primary);
+    color: var(--clr-body-gray);
+    padding-bottom: .5em;
+}
+
+.intro__list__item img {
+    padding-right: .5em;
+    vertical-align: middle;
+}
+
+.intro__email__input {
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+    color: #cfcfcf;
+}
+
 
 /* Info */
 .socials__list {
@@ -272,6 +321,7 @@ button {
     width: 150px;
 }
 
+
 /* Footer */
 .footer {
     background-color: var(--clr-dark);
@@ -289,7 +339,7 @@ button {
     text-decoration: none;
     list-style: none;
     font-family: var(--ff-primary);
-    color: #aeaeae;
+    color: var(--clr-body-gray);
 }
 
 .nav__footer__headlink,
