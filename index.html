@@ -23,11 +23,15 @@
         <div class="logo_with_nav">
             <p class="logo"><strong>spense.</strong></p>
             
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
+            <button 
+                class="nav-toggle" 
+                aria-label="toggle navigation"
+                aria-controls="nav"
+                aria-expanded="false">
+              <span class="sr-only"></span>
             </button>
 
-            <nav class="nav nav-open">
+            <nav class="nav" id="nav" data-visibility="false">
                 <div class="nav_lists">
                 <ul class="nav_list_main">
                         <li class="nav_list_item">
