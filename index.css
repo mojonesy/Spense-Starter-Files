@@ -68,6 +68,8 @@ button {
     margin-top: 0;
     padding: 1em;
     text-align: center;
+    font-size: 15px;
+    min-height: 5em;
 }
 
 .banner span {
@@ -193,7 +195,7 @@ button {
     .logo_with_nav { padding: 0 .5em }
     
     .nav[data-visibility='true'] {
-        transform: translateX(60%);
+        transform: translateX(55%);
     }
     
     .nav {
@@ -223,7 +225,8 @@ button {
 
     .nav-toggle[aria-expanded="true"] {
         background-image: url('./Assets/Checkmark.svg');
-        top: 2em;
+        top: 1em;
+        right: 1.2em;
     }
 
     .nav_lists { 
