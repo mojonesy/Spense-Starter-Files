@@ -179,6 +179,48 @@ button {
         cursor: pointer;
     }
 
+    .nav-open,
+    .nav {
+        background: rgba(45, 45, 45, 0.85);
+        backdrop-filter: blur(3px);
+        position: absolute;
+        z-index: 10;
+        inset: 0;
+        transform: translateX(25%);
+    }
+
+    .nav-open,
+    .nav_link { color: var(--clr-light) }
+
+    .nav-open,
+    .nav_lists { 
+        flex-direction: column;
+        position: absolute;
+        z-index: 100;
+    }
+
+    .nav-open,
+    .nav_list_main,
+    .nav_list_login {
+        flex-direction: column;
+    }
+
+    .nav-open,
+    .nav_list_main .nav_list_item {
+        padding: 0 0 1.5em 2em;
+    }
+
+    .nav-open,
+    .nav_list_login {
+        padding: 1em 0 0 2em;
+    }
+
+    .nav-open,
+    .nav_list_login > * {
+        padding-bottom: 1em;
+    }
+
+
     .hamburger {
         display: block;
         position: relative;
@@ -191,7 +233,6 @@ button {
         background: var(--clr-dark);
         width: 1em;
         height: 2.5px;
-        transform: 300ms ease-in-out;
     }
 
     .hamburger::before,
@@ -205,6 +246,7 @@ button {
     .hamburger::before { top: 4.5px }
     .hamburger::after { bottom: 4.5px }
 }
+
 
 /* Intro */
 .section__intro__title {
