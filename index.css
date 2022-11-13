@@ -80,7 +80,7 @@ button {
 .section {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 1em;
     padding: 1em;
     padding-bottom: 3em;
 }
@@ -113,10 +113,17 @@ button {
 
 .hero__img {
     content: url('./Assets/Hero\ Image\ \(Mobile\).png');
+    width: 100%;
 }
 
-.phone__mockup {
+.phone__mockup__img {
     content: url('./Assets/Phone\ Mockup\ \(Mobile\).png');
+    width: 100%;
+}
+
+.text__editor__img {
+    content: url("./Assets/Text Editor.png");
+    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -252,32 +259,6 @@ button {
     .nav_list_login > * {
         padding-bottom: 1em;
     }
-
-
-    /* .hamburger {
-        display: block;
-        position: relative;
-        color: var(--clr-dark);
-    }
-
-    .hamburger,
-    .hamburger::before,
-    .hamburger::after {
-        background: var(--clr-dark);
-        width: 1em;
-        height: 2.5px;
-    }
-
-    .hamburger::before,
-    .hamburger::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-    }
-
-    .hamburger::before { top: 4.5px }
-    .hamburger::after { bottom: 4.5px } */
 }
 
 
@@ -322,31 +303,68 @@ button {
     display: flex;
     overflow-x: scroll;
     padding-left: 0;
-    margin: 0 1em;
+    margin: 0;
     height: 5em;
 }
 
 .socials__item {
-    padding-top: 3em; 
-    padding-right: 2em;
+    padding: 1em 1em 1em 0;
+    
 }
 
 .socials__item img { 
-    width: 150px;
+    height: 1.5em;
+    object-fit: contain;
+}
+
+.section__info { padding-bottom: 1em }
+
+.subsection__info__escrow {
+    border-radius: 10px;
+    padding: 1em 2em 0;
+}
+
+.text__editor__img {
+    padding-top: 2em;
 }
 
 
 /* Footer */
 .footer {
     background-color: var(--clr-dark);
-    color: #aeaeae;
+    color: var(--clr-body-gray);
+    padding: 3em 0;
+}
+
+.nav__footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__header { 
+    padding: 0 1em;
+    flex-basis: 350px;
+}
+
+.footer__subtitle { 
+    margin-top: 0;
 }
 
 .footer__body span {
     font-style: italic;
 }
 
-.nav__footer__list { padding-left: 0 }
+/* .nav__footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+} */
+
+.nav__footer__list { 
+    padding: 0 2em;
+    list-style: none;
+    flex-grow: 2;
+}
 
 .nav__footer__headlink,
 .nav__footer__link {
@@ -357,6 +375,6 @@ button {
 }
 
 .nav__footer__headlink,
-.footer__subtitle 
-{ color: var(--clr-light);
+.footer__subtitle { 
+    color: var(--clr-light);
 }
