@@ -69,7 +69,7 @@ button {
     padding: 1em;
     text-align: center;
     font-size: 15px;
-    min-height: 5em;
+    min-height: 4em;
 }
 
 .banner span {
@@ -87,6 +87,7 @@ button {
 
 .section__intro {
     background-color: var(--clr-accent);
+    margin: 0;
 }
 
 .section__info {
@@ -137,6 +138,12 @@ button {
 }
 
 @media (min-width: 1024px) {
+    .logo_with_nav { 
+        margin: 0 6em;
+    }
+
+    .section { padding: 1em 8em 3em}
+
     .hero__img {
         content: url('./Assets/Hero\ Image\ \(Desktop\).png');
     }
@@ -294,6 +301,43 @@ button {
     padding: 1em;
     text-align: center;
     color: #cfcfcf;
+}
+
+@media (min-width: 1024px) {
+    .section__intro {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "list img"
+            "email img"
+        ;
+    }
+
+    .section__intro__title { 
+        grid-area: title;
+        margin-left: 0;
+        max-width: 600px;
+        padding-right: 10px;
+        font-size: 3em;
+    }
+
+    .section__intro__body { 
+        grid-area: subtitle;
+        margin-top: 5px;
+        padding-right: 10px;
+        max-width: 600px;
+    }
+
+    .intro__list { grid-area: list }
+
+    .section__intro__email { grid-area: email }
+
+    .hero__img {
+        grid-area: img;
+        align-self: flex-end;
+    }
 }
 
 
